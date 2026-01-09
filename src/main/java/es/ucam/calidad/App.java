@@ -38,7 +38,7 @@ public class App {
         BigDecimal total = aplicarIVA(base, iva);
 
         return "Factura " + fecha
-                + " | base=" + base.setScale(2, RoundingMode.HALF_UP);
+                + " | base=" + base.setScale(2, RoundingMode.HALF_UP)
                 + " | uds=" + unidades
                 + " | iva=" + iva + "%"
                 + " | total=" + total.setScale(2, RoundingMode.HALF_UP);
