@@ -57,7 +57,7 @@ public class App {
 
     public static BigDecimal parsearImporte(String importeTexto) {
         if (importeTexto == null || importeTexto.trim().isEmpty()) {
-            throw new IllegalArgumentException("El importe no puede estar vacío");
+            throw new IllegalArgumentException("El importe no puede estar vacío")
         }
         String limpio = importeTexto.trim().replace(",", ".");
         try {
